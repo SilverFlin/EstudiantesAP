@@ -93,9 +93,9 @@ import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import { RouterLink } from "vue-router";
 const navigation = [
-  { name: "Inicio", href: "/" },
+  { name: "Inicio", href: "/EstudiantesAP/" },
   // { name: "Dashboard", href: "/dashboard" },
-  { name: "Conoce más", href: "/conoce-mas" },
+  { name: "Conoce más", href: "/EstudiantesAP/conoce-mas" },
 ];
 
 const mobileMenuOpen = ref(false);

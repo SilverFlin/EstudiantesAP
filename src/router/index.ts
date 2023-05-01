@@ -7,17 +7,21 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
+      path: "/",
+      redirect: "/EstudiantesAP/"
+    },
+    {
+      path: '/EstudiantesAP/',
       name: 'home',
       component: HeroSection
     },
     {
-      path: '/dashboard',
+      path: '/EstudiantesAP/dashboard',
       name: 'dashboard',
       component: Dashboard
     },
     {
-      path: '/conoce-mas',
+      path: '/EstudiantesAP/conoce-mas',
       name: 'conoce-mas',
       component: Content
     },
