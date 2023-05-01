@@ -8,7 +8,7 @@
         <a href="#" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
           <img
-            class="h-8 w-auto"
+            class="w-auto h-8"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt=""
           />
@@ -21,7 +21,7 @@
           @click="mobileMenuOpen = true"
         >
           <span class="sr-only">Open main menu</span>
-          <Bars3Icon class="h-6 w-6" aria-hidden="true" />
+          <Bars3Icon class="w-6 h-6" aria-hidden="true" />
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
@@ -42,13 +42,13 @@
     >
       <div class="fixed inset-0 z-50" />
       <DialogPanel
-        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img
-              class="h-8 w-auto"
+              class="w-auto h-8"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
             />
@@ -59,17 +59,17 @@
             @click="mobileMenuOpen = false"
           >
             <span class="sr-only">Close menu</span>
-            <XMarkIcon class="h-6 w-6" aria-hidden="true" />
+            <XMarkIcon class="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
-        <div class="mt-6 flow-root">
+        <div class="flow-root mt-6">
           <div class="-my-6 divide-y divide-gray-500/10">
-            <div class="space-y-2 py-6">
+            <div class="py-6 space-y-2">
               <a
                 v-for="item in navigation"
                 :key="item.name"
                 :href="item.href"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >{{ item.name }}</a
               >
             </div>
@@ -94,7 +94,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import { RouterLink } from "vue-router";
 const navigation = [
   { name: "Inicio", href: "/" },
-  { name: "Dashboard", href: "/dashboard" },
+  // { name: "Dashboard", href: "/dashboard" },
   { name: "Conoce más", href: "/conoce-mas" },
 ];
 
